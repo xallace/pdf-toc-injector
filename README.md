@@ -56,7 +56,7 @@ Navigating a 500-page book requires manual page guessing because:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/pdf-toc-injector.git
+git clone https://github.com/xallace/pdf-toc-injector.git
 cd pdf-toc-injector
 
 # Install dependencies
@@ -142,7 +142,7 @@ git add .
 git commit -m "Initial release of pdf-toc-injector v0.1.0"
 
 # Connect to your GitHub repository
-git remote add origin https://github.com/<YOUR-USERNAME>/pdf-toc-injector.git
+git remote add origin https://github.com/xallace/pdf-toc-injector.git
 git push -u origin main
 ```
 
