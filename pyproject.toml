@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-toc-injector"
+version = "0.1.0"
+description = "Heuristic Table of Contents detection and bookmark injection for digitized PDFs with dynamic page-offset probing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Walter Lehn" }
+]
+keywords = ["pdf", "bookmarks", "toc", "pymupdf", "ocr", "digitization", "table-of-contents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Text Processing :: General",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "pymupdf>=1.24.0"
+]
+
+[project.scripts]
+pdf-toc-injector = "pdf_toc_injector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
